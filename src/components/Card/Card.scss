@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis");
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  &-weather {
+    &__icons {
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      height: 128px;
+    }
+    &__value {
+      color: #293251;
+      font-size: 4em;
+      text-align: center;
+      cursor: pointer;
+      text-align: center;
+      p {
+        margin: 5px;
+      }
+    }
+    &__description {
+      font-family: "Dosis";
+      text-align: center;
+      font-weight: 900;
+      font-size: 15px;
+      p {
+        margin: 10px 0;
+      }
+    }
+    &__city {
+      font-family: "Dosis";
+      text-align: center;
+      font-weight: 900;
+      font-size: 20px;
+      p {
+        margin: 5px;
+      }
+    }
+  }
+}
