@@ -11,7 +11,7 @@ export function useUniversity(city) {
           baseURL: "http://universities.hipolabs.com/",
           timeout: 20000,
         })
-        .get(`/search?name=${city}&contry=France`);
+        .get(`/search?name=${city}&country=France`);
 
       if (data) {
         setUniversities(data.data.slice(0, 5));
