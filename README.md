@@ -2,7 +2,7 @@
 
 yarn install or npm install
 
-# il faut créer un fichier .env avec la variable suivante (PS: contacter moi par mail pour recevoir la clé d'api )
+# il faut créer un fichier .env avec les variables suivantes (PS: contacter moi par mail pour recevoir la clé d'api )
 
 REACT_APP_API_GOOGLE
 
