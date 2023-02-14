@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import "./App.scss";
 
 import { CurrentAddressContext } from "./context/AddressContext";
-import { useWeatherApi } from "./hook/useWeatherApi";
-import Card from "./components/Card/Card";
+
 import { ComboboxSearchAddress } from "./components/ComboboxSearchAddress/ComboboxSearchAddress";
+import List from "./components/List/List";
 
 function App() {
   const [address, setAddress] = useState("");
-  const { weather } = useWeatherApi(address.city);
-
-  /*   console.log("setAddress", setAddress); */
 
   return (
     <CurrentAddressContext.Provider value={{ address, setAddress }}>
@@ -27,7 +24,7 @@ function App() {
           />
         </header>
         <main>
-          <Card weather={weather}></Card>
+          <List />
         </main>
       </div>
     </CurrentAddressContext.Provider>

@@ -1,16 +1,17 @@
 import React, { useState } from "react";
+import "./List.scss";
 import Card from "../Card/Card";
 
 export default function List() {
-  const [cardList, setCardList] = useState([]);
+  const [cardList] = useState([{ name: "weather" }]);
   return (
-    <div>
+    <div className="list">
       <ul>
-        {cardList.map(() => {
+        {cardList.map((item) => (
           <li>
-            <Card></Card>
-          </li>;
-        })}
+            <Card name={item.name} data={item.data} />
+          </li>
+        ))}
       </ul>
     </div>
   );
