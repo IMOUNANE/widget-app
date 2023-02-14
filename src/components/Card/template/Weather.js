@@ -8,6 +8,7 @@ export default function Weather() {
 
   return (
     <div className="card">
+      <h3>API open Weather Map</h3>
       <div className="card-weather__icons">
         <img
           src={`assets/weather-icons/${weather?.iconId}.png`}

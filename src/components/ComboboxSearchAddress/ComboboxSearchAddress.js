@@ -55,7 +55,7 @@ export function ComboboxSearchAddress({
         },
         types: ["geocode"],
       }}
-      debounce={500}
+      debounce={700}
     >
       {({ getInputProps, suggestions }) => {
         return (
